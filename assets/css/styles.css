@@ -303,7 +303,7 @@ a {
 
 /* ------------- About ------------- */
 .about {
-    padding: 130px 0 53px;
+    padding: 53px 0;
     background: #fffaf5;
 }
 
@@ -372,13 +372,9 @@ a {
     line-height: 1;
 }
 
-.about__form-label::before,
-.about__form-label::after {
+.about__form-label::before {
     content: "";
     display: inline-block;
-}
-
-.about__form-label::before {
     width: 18px;
     height: 18px;
     border: 3px solid #48496a;
@@ -386,16 +382,11 @@ a {
 }
 
 .about__form-label::after {
+    content: url(../img/checked.svg);
     display: none;
     position: absolute;
-    top: 7px;
-    left: 6px;
-    width: 10px;
-    height: 4px;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-radius: 1px;
-    rotate: -45deg;
+    top: 2px;
+    left: 5px;
 }
 
 /* About media */
