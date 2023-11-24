@@ -963,3 +963,110 @@ a {
 .pricing-item__row ~ .pricing-item__row {
     margin-top: 18px;
 }
+
+/* ------------- Feedback ------------- */
+.feedback {
+    padding-top: 130px;
+}
+
+.feedback__inner {
+    display: flex;
+    align-items: center;
+}
+
+/* Feedback Avatar */
+.feedback__btn-left {
+    padding: 16px 14px;
+    width: 54px;
+    height: 54px;
+    background: transparent;
+}
+
+.feedback__avt {
+    margin-left: 44px;
+}
+
+.feedback__photo {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    max-width: 274px;
+    height: 350px;
+}
+
+.feedback__photo::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 137px;
+    background: #ffda54;
+}
+
+.feedback__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 137px;
+}
+
+/* Feedback Reviews */
+.feedback__reviews {
+    margin-left: 115px;
+}
+
+.feedback__desc {
+    margin-top: 24px;
+    max-width: 553px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.56;
+}
+
+.feedback__name {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.feedback__name::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 99px;
+}
+
+.feedback__right {
+    margin-left: 75px;
+}
+
+/* Feedback Dots */
+.feedback__dots {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.feedback__dots-rectagle {
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--button-color);
+}
+
+.feedback__dots-circle {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--button-color);
+    border-radius: 50%;
+}
