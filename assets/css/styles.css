@@ -71,6 +71,14 @@ a {
     cursor: pointer;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+}
+
 /* ------------- Header + navbar ------------- */
 .header {
     position: sticky;
@@ -967,6 +975,7 @@ a {
 /* ------------- Feedback ------------- */
 .feedback {
     padding-top: 130px;
+    background: #fffaf5;
 }
 
 .feedback__inner {
@@ -997,7 +1006,6 @@ a {
 .feedback__photo::before {
     content: "";
     position: absolute;
-    z-index: -1;
     display: inline-flex;
     width: 100%;
     height: 100%;
@@ -1006,6 +1014,8 @@ a {
 }
 
 .feedback__img {
+    position: relative;
+    z-index: 1;
     width: 100%;
     object-fit: cover;
     border-radius: 137px;
@@ -1069,4 +1079,97 @@ a {
     height: 8px;
     border: 1px solid var(--button-color);
     border-radius: 50%;
+}
+
+/* ------------- Blog ------------- */
+.blog {
+    padding-top: 130px;
+    background: #fffaf5;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading__desc {
+    margin-right: 73px;
+    width: 350px;
+}
+
+.blog__btn {
+    margin-top: 24px;
+    min-width: 182px;
+}
+
+/* Blog Body */
+.blog__body {
+    margin-top: 54px;
+    display: flex;
+    overflow: hidden;
+}
+
+.blog__list {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    column-gap: 48px;
+    transform: translateX(-100%);
+    transition: all ease 0.3s;
+}
+
+.blog__link {
+    display: block;
+}
+
+.blog-item {
+    width: calc((100% - 48px * 2) / 3);
+}
+
+.blog-item__photo {
+    width: 100%;
+    height: 362px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+
+.blog-item__date {
+    margin-left: 36px;
+    padding-top: 24px;
+    color: #fff;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.blog-item__img-base {
+    margin: 26px 0 0 36px;
+    max-width: 322px;
+    height: 296px;
+}
+
+.blog-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-item__heading {
+    margin-top: 28px;
+    max-width: 338px;
+    color: var(--primary-color-text);
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54;
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
 }
