@@ -15,6 +15,11 @@
             href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
+        <!-- AOS animate -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -37,10 +42,12 @@
                         <a href="/" class="header__link header__link--active">
                             Home
                         </a>
-                        <a href="#!" class="header__link">About</a>
-                        <a href="#!" class="header__link">Services & Rates</a>
-                        <a href="#!" class="header__link">Reviews</a>
-                        <a href="#!" class="header__link">Contacts us</a>
+                        <a href="#about" class="header__link">About</a>
+                        <a href="#services" class="header__link">
+                            Services & Rates
+                        </a>
+                        <a href="#reviews" class="header__link">Reviews</a>
+                        <a href="#contact" class="header__link">Contacts us</a>
                     </nav>
                     <nav class="header__signup">
                         <a href="#!" class="header__btn">Sign up</a>
@@ -139,7 +146,7 @@
                         </figure>
                         <!-- Hero Text -->
                         <section class="hero__text">
-                            <h1 class="hero__heading">
+                            <h1 class="hero__heading" data-aos="fade-left">
                                 Established & Trusted Pet Care Service
                             </h1>
                             <p class="section-desc hero__desc">
@@ -178,13 +185,16 @@
                 </div>
             </section>
             <!-- ------------- About ------------- -->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
                     <section class="about__inner">
                         <!-- About text -->
                         <section class="about__text">
                             <p class="about__sub-heading">// About //</p>
-                            <h2 class="section-heading about__heading">
+                            <h2
+                                class="section-heading about__heading"
+                                data-aos="fade-right"
+                            >
                                 Best Agency For Your Pet.
                             </h2>
                             <p class="section-desc about__desc">
@@ -301,7 +311,10 @@
                 <div class="container">
                     <section class="feature__inner">
                         <!-- Feature Media -->
-                        <figure class="feature__media">
+                        <figure
+                            class="feature__media"
+                            data-aos="fade-down-right"
+                        >
                             <figure class="feature__photo">
                                 <img
                                     src="./img/feature-01.png"
@@ -353,34 +366,42 @@
                                 daily individual time in our large play yard.
                             </p>
                             <div class="feature__row">
-                                <div class="feature__item">
+                                <div
+                                    class="feature__item feature__item--active"
+                                >
                                     <img
-                                        src="./img/feature-icon-01.svg"
+                                        src="./img/feature-icon-01.png"
                                         alt=""
                                         class="feature__item-icon"
                                     />
-                                    <span class="feature__item-name">
-                                        Pet Boarding
+                                    <span>
+                                        <a href="#!" class="feature__item-name">
+                                            Pet Boarding
+                                        </a>
                                     </span>
                                 </div>
                                 <div class="feature__item">
                                     <img
-                                        src="./img/feature-icon-02.svg"
+                                        src="./img/feature-icon-02.png"
                                         alt=""
                                         class="feature__item-icon"
                                     />
-                                    <span class="feature__item-name">
-                                        Pet Boarding
+                                    <span>
+                                        <a href="#!" class="feature__item-name">
+                                            Pet Daycare
+                                        </a>
                                     </span>
                                 </div>
                                 <div class="feature__item">
                                     <img
-                                        src="./img/feature-icon-03.svg"
+                                        src="./img/feature-icon-03.png"
                                         alt=""
                                         class="feature__item-icon"
                                     />
-                                    <span class="feature__item-name">
-                                        Pet Boarding
+                                    <span>
+                                        <a href="#!" class="feature__item-name">
+                                            Pet Transport
+                                        </a>
                                     </span>
                                 </div>
                             </div>
@@ -395,7 +416,7 @@
                 </div>
             </section>
             <!-- ------------- Services ------------- -->
-            <section class="services">
+            <section id="services" class="services">
                 <div class="container">
                     <!-- Services Top -->
                     <section class="services__top">
@@ -478,6 +499,8 @@
                                     src="./img/services-01.png"
                                     alt="Our Services"
                                     class="services__img"
+                                    data-aos="zoom-in"
+                                    data-aos-anchor-placement="bottom-bottom"
                                 />
                             </figure>
                         </div>
@@ -856,7 +879,7 @@
                 </div>
             </section>
             <!-- ------------- Feedback ------------- -->
-            <section class="feedback">
+            <section id="reviews" class="feedback">
                 <div class="container">
                     <!-- List -->
                     <div class="feedback__list">
@@ -1154,7 +1177,7 @@
             </section>
         </main>
         <!-- ------------- Footer ------------- -->
-        <footer class="footer">
+        <footer id="contact" class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__content">
@@ -1340,5 +1363,9 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
