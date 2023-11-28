@@ -679,16 +679,21 @@
                             dog has its own private, spacious room and daily
                             individual time in our large play yard.
                         </p>
-                        <div class="pricing__choose">
-                            <div class="pricing__choose-content">
-                                <button class="pricing__monthly btn">
+                        <div class="pricing__switch">
+                            <input
+                                type="checkbox"
+                                name="type"
+                                id="checkbox"
+                                checked
+                                hidden
+                            />
+                            <div class="pricing__switch-wrap">
+                                <label class="pricing__label" for="checkbox">
                                     Monthly
-                                </button>
-                                <button
-                                    class="pricing__yearly pricing__yearly--active btn"
-                                >
+                                </label>
+                                <label class="pricing__label" for="checkbox">
                                     Yearly
-                                </button>
+                                </label>
                             </div>
                         </div>
                         <img
@@ -882,94 +887,204 @@
             <section id="reviews" class="feedback">
                 <div class="container">
                     <!-- List -->
-                    <div class="feedback__list">
-                        <div class="feedback__inner">
-                            <!-- Feedback Avatar -->
-                            <div class="feedback__left">
-                                <button class="btn feedback__btn-left">
-                                    <svg
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 20 20"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M16.875 9.99854H3.125"
-                                            stroke="currentColor"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M8.75 4.37354L3.125 9.99854L8.75 15.6235"
-                                            stroke="currentColor"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                            <figure class="feedback__avt">
-                                <figure class="feedback__photo">
-                                    <img
-                                        src="./img/feedback-01.png"
-                                        alt="Our Reviews"
-                                        class="feedback__img"
+                    <div class="feedback__inner">
+                        <!-- Feedback Avatar -->
+                        <div class="feedback__left">
+                            <button class="btn feedback__btn-left">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16.875 9.99854H3.125"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
                                     />
+                                    <path
+                                        d="M8.75 4.37354L3.125 9.99854L8.75 15.6235"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="feedback__list">
+                            <!-- Item 1 -->
+                            <article class="feedback__item">
+                                <figure class="feedback__avt">
+                                    <figure class="feedback__photo">
+                                        <img
+                                            src="./img/feedback-01.png"
+                                            alt="Our Reviews"
+                                            class="feedback__img"
+                                        />
+                                    </figure>
                                 </figure>
-                            </figure>
-                            <!-- Feedback Reviews -->
-                            <section class="feedback__reviews">
-                                <h2 class="section-heading feedback__heading">
-                                    Our Reviews
-                                </h2>
-                                <p class="section-desc feedback__desc">
-                                    “It was very comforting to recieve a text
-                                    and pics each day about our pets and how
-                                    they were doing. It was also nice that my
-                                    pets were in the comfortable environment of
-                                    their own home and received playfull
-                                    attention from our pet sitters as well.
-                                    Thanks so much!”
-                                </p>
-                                <span class="feedback__name">Karla Deras</span>
-                            </section>
-                            <div class="feedback__right">
-                                <button class="btn feedback__btn-left">
-                                    <svg
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 20 20"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
+                                <!-- Feedback Reviews -->
+                                <section class="feedback__reviews">
+                                    <h2
+                                        class="section-heading feedback__heading"
                                     >
-                                        <path
-                                            d="M3.125 9.99854H16.875"
-                                            stroke="currentColor"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
+                                        Our Reviews
+                                    </h2>
+                                    <p class="section-desc feedback__desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="feedback__name"
+                                        >Karla Deras</span
+                                    >
+                                </section>
+                            </article>
+
+                            <!-- Item 2 -->
+                            <article class="feedback__item">
+                                <figure class="feedback__avt">
+                                    <figure class="feedback__photo">
+                                        <img
+                                            src="./img/feedback-01.png"
+                                            alt="Our Reviews"
+                                            class="feedback__img"
                                         />
-                                        <path
-                                            d="M11.25 4.37354L16.875 9.99854L11.25 15.6235"
-                                            stroke="currentColor"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
+                                    </figure>
+                                </figure>
+                                <!-- Feedback Reviews -->
+                                <section class="feedback__reviews">
+                                    <h2
+                                        class="section-heading feedback__heading"
+                                    >
+                                        Our Reviews
+                                    </h2>
+                                    <p class="section-desc feedback__desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="feedback__name"
+                                        >Karla Deras</span
+                                    >
+                                </section>
+                            </article>
+
+                            <!-- Item 3 -->
+                            <article class="feedback__item">
+                                <figure class="feedback__avt">
+                                    <figure class="feedback__photo">
+                                        <img
+                                            src="./img/feedback-01.png"
+                                            alt="Our Reviews"
+                                            class="feedback__img"
                                         />
-                                    </svg>
-                                </button>
-                            </div>
+                                    </figure>
+                                </figure>
+                                <!-- Feedback Reviews -->
+                                <section class="feedback__reviews">
+                                    <h2
+                                        class="section-heading feedback__heading"
+                                    >
+                                        Our Reviews
+                                    </h2>
+                                    <p class="section-desc feedback__desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="feedback__name"
+                                        >Karla Deras</span
+                                    >
+                                </section>
+                            </article>
+
+                            <!-- Item 4 -->
+                            <article class="feedback__item">
+                                <figure class="feedback__avt">
+                                    <figure class="feedback__photo">
+                                        <img
+                                            src="./img/feedback-01.png"
+                                            alt="Our Reviews"
+                                            class="feedback__img"
+                                        />
+                                    </figure>
+                                </figure>
+                                <!-- Feedback Reviews -->
+                                <section class="feedback__reviews">
+                                    <h2
+                                        class="section-heading feedback__heading"
+                                    >
+                                        Our Reviews
+                                    </h2>
+                                    <p class="section-desc feedback__desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="feedback__name"
+                                        >Karla Deras</span
+                                    >
+                                </section>
+                            </article>
+                        </div>
+                        <div class="feedback__right">
+                            <button class="btn feedback__btn-left">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3.125 9.99854H16.875"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M11.25 4.37354L16.875 9.99854L11.25 15.6235"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                     <!-- Feedback Dots -->
                     <div class="feedback__dots">
-                        <div class="feedback__dots-rectagle"></div>
-                        <div class="feedback__dots-circle"></div>
-                        <div class="feedback__dots-circle"></div>
-                        <div class="feedback__dots-circle"></div>
+                        <div class="feedback__dot feedback__dot--active"></div>
+                        <div class="feedback__dot"></div>
+                        <div class="feedback__dot"></div>
+                        <div class="feedback__dot"></div>
                     </div>
                 </div>
             </section>
